@@ -69,19 +69,22 @@ Farhang and Roboto webfonts and their supplied license notices.
 ## Edit
 
 - `dist/content.js`: bilingual company information, six service descriptions, research context, contact details and interface copy.
-- `dist/app.js`: rendering, language selection, mobile menu, active navigation, service selection, sharing and printing.
-- `dist/styles.css`: logo-derived navy and blue visual system, RTL/LTR layouts, responsive breakpoints, reduced-motion and print styles.
+- `dist/app.js`: rendering, language selection, mobile menu, active navigation, service selection and sharing.
+- `dist/styles.css`: supplied six-color brand palette, RTL/LTR layouts, responsive breakpoints and reduced-motion styles.
 - `dist/assets/`: supplied Orthen marks, a favicon, the supplied Farhang Persian webfonts and locally bundled Roboto Latin fonts.
 
 ## Features
+
+- Quiet hero with the slogan, short introduction, services link and brand mark.
+- Company introduction without a naming-origin explanation.
+- Contact details in the footer; no visible website URL or catalog-print control.
 
 - Persian/English switching, with `?lang=fa` or `?lang=en` and local language preference persistence.
 - Direct service URLs, e.g. `?service=biomechanics&lang=en#services`.
 - Six service panels with semantic buttons, pressed state and live announcements.
 - Mobile navigation, Escape-to-close, visible focus indicators and skip navigation.
 - Copyable service links and a visible result message.
-- A printable catalog containing **all six services**, including native browser printing.
-- Verified supplied telephone and location, with a working `tel:` link.
+- Supplied telephone and location in the footer, with a working `tel:` link.
 - No product photographs, external runtime requests, analytics, forms or server services.
 
 ## Template provenance
@@ -96,8 +99,8 @@ Based on the implementation methods in [MRahmaniT/APTUS-Catalog](https://github.
 
 - The user's Orthen brand brief: Orthen = Orthopedic + Engineering; Persian slogan “درک بالینی . دقت مهندسی”. The English slogan is a translation.
 - Supplied Orthen banner PDF and contact JPEG: six service categories, telephone `+98 912 73 49 739`, website `www.orthen.info`, and Tehran / Sharif University of Technology / Sattari Complex location.
-- Supplied Orthen PNG logos: header, footer and icon assets. Palette comes from the navy and blue logo, rather than the banner's green/cream theme.
-- Supplied SOBL information JPEG and Sharif laboratory brochure PDF: biomechanical testing, loading, failure/stiffness assessment, finite element modelling, design support and interdisciplinary collaboration. The research section explicitly describes **SOBL**, rather than claiming the laboratory's founders, team or institutional status belong to Orthen.
+- Supplied Orthen PNG logos: header, footer and icon assets. The supplied brand palette uses Bone Light `#F2EDE3`, Surgical Blue `#4E7F95`, Deep Clinical Navy `#1F3442`, Growth Green `#729D65`, Engineering Gray `#7B8A93` and Sterile Mist `#DCE3E6`.
+- Supplied biomechanics information JPEG and research brochure PDF: biomechanical testing, loading, failure/stiffness assessment, finite element modelling, design support and interdisciplinary collaboration. The page describes research methods without naming laboratories or academics, or claiming another team's institutional status.
 - Explanatory service and workflow copy is paraphrased from these materials. No certifications, performance statistics, clinical results, client endorsements, manufacturing methods, or corporate founding claims have been added.
 
 The supplied product photographs and brochure collages are deliberately excluded from the website. Source PDFs are not distributed as web assets.
