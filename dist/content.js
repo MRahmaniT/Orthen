@@ -1,0 +1,81 @@
+// Company information: supplied Orthen banner and brand brief.
+// Research information is attributed to the separate supplied SOBL material.
+export const company = {
+  name: 'Orthen', phone: '+98 912 73 49 739', telephone: '+989127349739',
+  website: 'https://www.orthen.info',
+  address: {fa:'تهران، دانشگاه صنعتی شریف، مجتمع ستاری', en:'Sattari Complex, Sharif University of Technology, Tehran'}
+};
+export const services = [
+  {id:'design', icon:'design', title:{fa:'طراحی و توسعه تجهیزات ارتوپدی',en:'Orthopedic device design'},
+   subtitle:{fa:'از نیاز بالینی تا طراحی مهندسی',en:'From clinical needs to engineering design'},
+   body:{fa:'توسعه راهکارهای مهندسی برای چالش‌های ارتوپدی؛ از تعریف مفهوم و اصلاح طراحی تا ارزیابی مکانیکی مقایسه‌ای، با توجه به محدودیت‌های مهندسی و کاربردپذیری جراحی.',en:'Engineering development for orthopedic challenges, from concept development and design refinement to comparative mechanical assessment, with attention to engineering constraints and surgical usability.'},
+   items:{fa:['توسعه مفهوم و اصلاح طراحی','پشتیبانی طراحی ایمپلنت‌ها و ابزارهای جراحی','تلفیق الزامات مهندسی و نیازهای بالینی'],en:['Concept development and design refinement','Design support for implants and surgical tools','Integration of engineering and clinical requirements']}},
+  {id:'localization', icon:'localization', title:{fa:'بومی‌سازی فناوری‌های پزشکی',en:'Medical technology localization'},
+   subtitle:{fa:'فناوری در پاسخ به نیاز',en:'Technology shaped around a need'},
+   body:{fa:'بومی‌سازی فناوری‌های پزشکی یکی از حوزه‌های فعالیت اورتن است. این حوزه در کنار طراحی، نمونه‌سازی و مهندسی ساخت قرار می‌گیرد تا نیازهای بالینی و صنعتی در توسعه راهکارهای مهندسی دیده شوند.',en:'Medical technology localization is one of Orthen’s service areas. Alongside design, prototyping and manufacturing engineering, it brings clinical and industrial needs into the development of engineering solutions.'},
+   items:{fa:['تمرکز بر نیازهای بالینی و صنعتی','پیوند طراحی با مهندسی ساخت','توسعه راهکار متناسب با مسئله'],en:['Focus on clinical and industrial needs','Connecting design with manufacturing engineering','Problem-oriented engineering development']}},
+  {id:'prototyping', icon:'prototyping', title:{fa:'نمونه‌سازی و مهندسی ساخت',en:'Prototyping & manufacturing'},
+   subtitle:{fa:'پیوند طراحی و ساخت',en:'Connecting design and making'},
+   body:{fa:'نمونه‌سازی و مهندسی ساخت در کنار طراحی و توسعه تجهیزات ارتوپدی، بخشی از خدمات اورتن است؛ مسیری برای تبدیل ایده‌های مهندسی به نمونه‌هایی قابل بررسی و ارزیابی.',en:'Prototyping and manufacturing engineering complement Orthen’s orthopedic device design and development services, turning engineering concepts into prototypes that can be examined and assessed.'},
+   items:{fa:['نمونه‌سازی مفاهیم مهندسی','توجه به ملاحظات ساخت در طراحی','بررسی و اصلاح نمونه در مسیر توسعه'],en:['Prototyping engineering concepts','Considering manufacturing constraints in design','Prototype assessment and refinement']}},
+  {id:'biomechanics', icon:'biomechanics', title:{fa:'آزمون‌های بیومکانیکی',en:'Biomechanical testing'},
+   subtitle:{fa:'شواهد مکانیکی برای تصمیم‌گیری',en:'Mechanical evidence for decisions'},
+   body:{fa:'ارزیابی مکانیکی سازه‌های ارتوپدی با آزمون‌های بیومکانیکی. بارگذاری استاتیکی و چرخه‌ای، تحلیل شکست و اندازه‌گیری سختی از محورهای اصلی ارزیابی مکانیکی هستند.',en:'Mechanical evaluation of orthopedic constructs through biomechanical testing. Static and cyclic loading, failure analysis and stiffness measurement are core mechanical evaluation activities.'},
+   items:{fa:['بارگذاری استاتیکی و چرخه‌ای','اندازه‌گیری سختی و تحلیل شکست','ارزیابی مکانیکی و مقایسه طراحی‌ها'],en:['Static and cyclic loading','Stiffness measurement and failure analysis','Mechanical assessment and design comparison']}},
+  {id:'research', icon:'research', title:{fa:'تحقیق و نوآوری',en:'Research & innovation'},
+   subtitle:{fa:'از پرسش تا شواهد',en:'From questions to evidence'},
+   body:{fa:'پژوهش مسئله‌محور برای تبدیل چالش‌های واقعی ارتوپدی به شواهد بیومکانیکی و راهکارهای مهندسی. مدل‌سازی عددی و اجزای محدود، تحلیل تنش و کرنش و بررسی پایداری تثبیت از مسیرهای بررسی مسائل بیومکانیکی هستند.',en:'Purpose-driven research translating real orthopedic challenges into biomechanical evidence and engineering solutions. Numerical and finite element modelling, stress–strain analysis and fixation stability offer pathways to investigate biomechanical questions.'},
+   items:{fa:['مدل‌سازی عددی و اجزای محدود','تحلیل تنش، کرنش و پایداری تثبیت','پروژه‌های مشترک بالینی و مهندسی'],en:['Numerical and finite element modelling','Stress, strain and fixation stability analysis','Joint clinical–engineering projects']}},
+  {id:'consulting', icon:'consulting', title:{fa:'مشاوره تخصصی',en:'Specialist consulting'},
+   subtitle:{fa:'نگاه مشترک به یک مسئله',en:'A shared view of the problem'},
+   body:{fa:'مشاوره تخصصی در کنار خدمات طراحی، آزمون و توسعه؛ با محوریت گفت‌وگو میان مهندسان، تیم‌های بالینی و صنعت برای روشن‌کردن مسئله و مسیر بررسی مهندسی آن.',en:'Specialist consulting complements design, testing and development, connecting engineers, clinical teams and industry to clarify a problem and its engineering assessment pathway.'},
+   items:{fa:['تعریف مسئله و نیازهای پروژه','بررسی مسیر ارزیابی مهندسی','همکاری میان بالین، پژوهش و صنعت'],en:['Clarifying the problem and project needs','Considering engineering assessment pathways','Collaboration across clinical practice, research and industry']}}
+];
+export const copy = {
+ fa:{
+  home:'خانه',nav:{about:'درباره اورتن',services:'خدمات',approach:'رویکرد',research:'پژوهش',contact:'ارتباط'},
+  menu:'باز کردن فهرست',closeMenu:'بستن فهرست',language:'زبان کاتالوگ',skip:'رفتن به محتوای اصلی',
+  catalog:'کاتالوگ دیجیتال اورتن',eyebrow:'ارتوپدی + مهندسی',heroA:'درک بالینی.',heroB:'دقت مهندسی.',
+  intro:'راهکارهای نوآورانه و مهندسی در پاسخ به چالش‌های بالینی؛ پیوندی میان شناخت مسئله، طراحی و ارزیابی بیومکانیکی.',explore:'کشف خدمات اورتن',start:'گفت‌وگو درباره همکاری',scroll:'بیشتر بشناسید',
+  figureTop:'تلاقی دو نگاه',figureBottom:'یک مسیر مشترک',figureClinical:'درک بالینی',figureEngineering:'دقت مهندسی',
+  band:['نیاز بالینی','تفکر مهندسی','شواهد بیومکانیکی'],
+  aboutLabel:'۰۱ / درباره ما',aboutTitle:'در نقطه تلاقی\nبالین و مهندسی.',aboutLead:'Orthen از پیوند Orthopedic و Engineering شکل گرفته است.',
+  aboutBody:'اورتن بر ارائه راهکارهای نوآورانه و مهندسی در پاسخ به چالش‌های بالینی تمرکز دارد. طراحی و توسعه تجهیزات ارتوپدی، بومی‌سازی فناوری‌های پزشکی، نمونه‌سازی و مهندسی ساخت، آزمون‌های بیومکانیکی، تحقیق و نوآوری و مشاوره تخصصی، حوزه‌های فعالیت اورتن هستند.',
+  aboutNote:'از شناخت نیاز تا بررسی راهکار؛ با زبان مشترک بالین و مهندسی.',
+  servicesLabel:'۰۲ / حوزه‌های فعالیت',servicesTitle:'یک نیاز.\nچند مسیر تخصصی.',servicesIntro:'خدمات را انتخاب کنید و با حوزه‌های فعالیت اورتن بیشتر آشنا شوید.',serviceDetail:'جزئیات خدمت',serviceContact:'درباره این خدمت صحبت کنیم',share:'کپی لینک خدمت',shared:'لینک خدمت کپی شد',shareError:'لینک این خدمت در نوار آدرس آماده است',
+  approachLabel:'۰۳ / رویکرد',approachTitle:'از چالش بالینی\nتا راهکار مهندسی.',approachIntro:'رویکردی مسئله‌محور با گفت‌وگو میان بالین، مهندسی و پژوهش؛ بر پایه نیاز واقعی و ارزیابی مکانیکی.',
+  steps:[['شناخت مسئله','صورت‌بندی نیاز بالینی یا صنعتی و روشن‌کردن پرسش مهندسی.'],['طراحی و مدل‌سازی','توسعه مفهوم، اصلاح طراحی و تحلیل عددی متناسب با مسئله.'],['ساخت و ارزیابی','نمونه‌سازی، آزمون بیومکانیکی و ارزیابی مکانیکی مقایسه‌ای.'],['تحلیل و توسعه','تفسیر شواهد برای پشتیبانی از تصمیم‌گیری و ادامه توسعه.']],
+  researchLabel:'۰۴ / زمینه پژوهشی',researchTitle:'پژوهش با ریشه\nدر مسائل واقعی.',researchTag:'آزمایشگاه بیومکانیک ارتوپدی شریف',
+  researchBody:'آزمایشگاه بیومکانیک ارتوپدی دانشگاه صنعتی شریف (SOBL)، گروهی میان‌رشته‌ای است که با همکاری مهندسان و پزشکان، چالش‌های بالینی ارتوپدی را به شواهد کمی بیومکانیکی و راهکارهای مهندسی پیوند می‌دهد.',
+  researchMore:'این گروه میان‌رشته‌ای، پروژه‌ها را بر اساس نیازهای روشن بالینی یا صنعتی تعریف می‌کند تا نتایج بتوانند در تصمیم‌های درمانی، طراحی تجهیزات و پژوهش‌های آینده به کار روند.',
+  researchPeople:'آزمایشگاه توسط پروفسور فرزام فرهمند تأسیس شده و با همکاری دکتر امیر نورانی راهبری می‌شود.',
+  researchCaption:'درباره آزمایشگاه بیومکانیک ارتوپدی شریف (SOBL)',
+  researchTopics:[['آزمون تجربی','ارزیابی آزمایشگاهی با استخوان مصنوعی، مدل حیوانی و نمونه کاداوریک'],['مدل‌سازی عددی','مدل‌های اختصاصی بیمار و مدل‌های ایده‌آل استخوان، مفصل و ایمپلنت'],['تحلیل مکانیکی','تنش و کرنش، پایداری تثبیت و مقایسه طراحی‌ها']],
+  collaboration:'فضایی برای همکاری',collabTitle:'پزشکان. پژوهشگران. صنعت.',collabBody:'آزمایشگاه از همکاری با جراحان و تیم‌های بالینی، دانشجویان و پژوهشگران بیومکانیک و مهندسی، و شرکای صنعتی تجهیزات ارتوپدی و فناوری پزشکی استقبال می‌کند.',
+  contactLabel:'۰۵ / ارتباط با اورتن',contactTitle:'هر راهکار، با یک\nگفت‌وگو آغاز می‌شود.',contactBody:'برای گفت‌وگو درباره نیاز بالینی، پروژه مهندسی یا زمینه همکاری با اورتن در تماس باشید.',call:'تماس با اورتن',phoneLabel:'تلفن',addressLabel:'نشانی',webLabel:'وب‌سایت',print:'چاپ کاتالوگ',backTop:'بازگشت به بالا',rights:'اورتن؛ ارتوپدی + مهندسی',
+  printNote:'کاتالوگ خدمات اورتن',notFound:'خدمت انتخاب‌شده پیدا نشد؛ خدمات اورتن را مرور کنید.'
+ },
+ en:{
+  home:'Home',nav:{about:'About',services:'Services',approach:'Approach',research:'Research',contact:'Contact'},
+  menu:'Open menu',closeMenu:'Close menu',language:'Catalog language',skip:'Skip to content',
+  catalog:'Orthen digital catalog',eyebrow:'Orthopedic + Engineering',heroA:'Clinical insight.',heroB:'Engineering precision.',
+  intro:'Innovative engineering solutions for clinical challenges. Connecting an understanding of the problem with design and biomechanical assessment.',explore:'Explore our services',start:'Discuss a collaboration',scroll:'Discover Orthen',
+  figureTop:'Two perspectives',figureBottom:'One shared direction',figureClinical:'Clinical insight',figureEngineering:'Engineering precision',
+  band:['Clinical needs','Engineering thinking','Biomechanical evidence'],
+  aboutLabel:'01 / About Orthen',aboutTitle:'Where clinical practice\nmeets engineering.',aboutLead:'Orthen brings together Orthopedic and Engineering.',
+  aboutBody:'Orthen focuses on innovative engineering solutions in response to clinical challenges. Its service areas span orthopedic device design and development, medical technology localization, prototyping and manufacturing engineering, biomechanical testing, research and innovation, and specialist consulting.',
+  aboutNote:'From understanding a need to examining a solution, through a shared clinical and engineering language.',
+  servicesLabel:'02 / Our expertise',servicesTitle:'One need.\nMultiple perspectives.',servicesIntro:'Select a service to explore Orthen’s areas of expertise.',serviceDetail:'Service details',serviceContact:'Let’s discuss this service',share:'Copy service link',shared:'Service link copied',shareError:'The service link is ready in your address bar',
+  approachLabel:'03 / Our approach',approachTitle:'From clinical challenges\nto engineering solutions.',approachIntro:'A problem-oriented approach connecting clinical practice, engineering and research, grounded in real needs and mechanical assessment.',
+  steps:[['Understand','Define the clinical or industrial need and clarify the engineering question.'],['Design & model','Develop concepts, refine designs and use numerical analysis suited to the problem.'],['Prototype & assess','Connect prototyping with biomechanical testing and comparative mechanical assessment.'],['Analyse & develop','Interpret evidence to support decision-making and further development.']],
+  researchLabel:'04 / Research context',researchTitle:'Research rooted\nin real questions.',researchTag:'Sharif Orthopedic Biomechanics Laboratory',
+  researchBody:'The Sharif Orthopedic Biomechanics Laboratory (SOBL), at Sharif University of Technology, is an interdisciplinary research group connecting engineers and clinicians to turn orthopedic clinical challenges into quantitative biomechanical evidence and engineering solutions.',
+  researchMore:'This interdisciplinary group defines projects around clear clinical or industrial needs, so outcomes can inform treatment decisions, device design and future research.',
+  researchPeople:'The laboratory was founded by Prof. Farzam Farahmand and is led in collaboration with Dr. Amir Nourani.',
+  researchCaption:'About the Sharif Orthopedic Biomechanics Laboratory (SOBL)',
+  researchTopics:[['Experimental testing','In-vitro evaluation using synthetic bones, animal models and cadaveric specimens'],['Numerical modelling','Patient-specific and idealised models of bones, joints and implants'],['Mechanical analysis','Stress and strain, fixation stability and design comparison']],
+  collaboration:'Built around collaboration',collabTitle:'Clinicians. Researchers. Industry.',collabBody:'The laboratory welcomes collaboration with orthopedic surgeons and clinical teams, students and researchers in biomechanics and engineering, and industry partners in orthopedic devices and medical technology.',
+  contactLabel:'05 / Contact Orthen',contactTitle:'Every solution starts\nwith a conversation.',contactBody:'Get in touch to discuss a clinical need, an engineering project or an opportunity to collaborate with Orthen.',call:'Call Orthen',phoneLabel:'Telephone',addressLabel:'Find us',webLabel:'Website',print:'Print catalog',backTop:'Back to top',rights:'Orthen · Orthopedic + Engineering',
+  printNote:'Orthen services catalog',notFound:'That service was not found. Explore Orthen’s services below.'
+ }
+};
