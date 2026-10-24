@@ -1,3 +1,6 @@
 node_modules/
 .DS_Store
 *.tar.gz
+
+# Supplied proprietary fonts are installed on the host separately.
+/dist/assets/fonts/Farhang-*

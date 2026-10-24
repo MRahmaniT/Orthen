@@ -58,7 +58,7 @@ Reference: [cPanel deployment guide](https://docs.cpanel.net/knowledge-base/web-
 - `dist/content.js`: bilingual company information, six service descriptions, research context, contact details and interface copy.
 - `dist/app.js`: rendering, language selection, mobile menu, active navigation, service selection, sharing and printing.
 - `dist/styles.css`: logo-derived navy and blue visual system, RTL/LTR layouts, responsive breakpoints, reduced-motion and print styles.
-- `dist/assets/`: supplied Orthen marks, a favicon and locally bundled Noto Sans Arabic fonts.
+- `dist/assets/`: supplied Orthen marks, a favicon, the supplied Farhang Persian webfonts and locally bundled Roboto Latin fonts.
 
 ## Features
 
@@ -89,4 +89,6 @@ Based on the implementation methods in [MRahmaniT/APTUS-Catalog](https://github.
 
 The supplied product photographs and brochure collages are deliberately excluded from the website. Source PDFs are not distributed as web assets.
 
-Noto Sans Arabic is bundled under the SIL Open Font License; see `dist/assets/fonts/OFL-1.1.txt`. Brand materials remain subject to their owners' rights.
+Persian text uses the supplied Farhang NonEnglish webfonts in regular and bold weights. Latin text uses Roboto, including English words within Persian paragraphs, labels, phone numbers and the English interface. All font assets are served locally. The supplied proprietary Farhang binaries are excluded from this public repository and distributed separately for installation on the hosting account. Extract the provided `orthen-farhang-fonts.zip` inside `/home/ortheninfo/public_html/`; it adds the expected files beneath `assets/fonts/`, including the original license notice. Install that bundle before deploying this update. The previous Noto Sans Arabic font remains available as a Persian fallback until Farhang is installed; its notice is `dist/assets/fonts/OFL-1.1.txt`.
+
+Roboto regular and bold Latin subsets are derived from the official Google Fonts `ofl/roboto/Roboto[wdth,wght].ttf` source. Roboto is distributed under the SIL Open Font License; see `dist/assets/fonts/Roboto-OFL.txt`. Brand materials remain subject to their owners' rights.
