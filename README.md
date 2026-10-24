@@ -32,8 +32,8 @@ cPanel screenshots. No build step is required.
 
 1. In **Git Version Control**, clone `MRahmaniT/Orthen` into a directory outside
    `public_html`, for example `/home/ortheninfo/repositories/Orthen`.
-   For this private repository, the hosting account must have working GitHub
-   authentication; a repository-specific, read-only SSH deploy key is sufficient.
+   Use the repository's HTTPS clone URL. If it is made private later, configure
+   GitHub authentication on the hosting account before pulling.
 2. Open **Manage**, confirm the checked-out branch is **main**, and select
    **Pull or Deploy**.
 3. Click **Update from Remote**. Wait for it to finish successfully.
@@ -52,6 +52,19 @@ updates require **Update from Remote**, then **Deploy HEAD Commit**. Automatic
 deployment is a separate setup and has not been configured.
 
 Reference: [cPanel deployment guide](https://docs.cpanel.net/knowledge-base/web-services/guide-to-git-set-up-deployment/).
+
+## Upload directly with File Manager
+
+For a manual upload, create a ZIP containing the **contents of `dist/`**, with
+`index.html` directly at the archive root. The complete upload includes both
+Farhang and Roboto webfonts and their supplied license notices.
+
+1. Open cPanel **File Manager** and navigate to `/home/ortheninfo/public_html/`.
+2. Upload the website ZIP there and choose **Extract** in the same directory.
+3. Confirm `index.html`, `styles.css`, `app.js`, `content.js` and `assets/` are
+   directly inside `public_html`, rather than an extra `dist/` or project folder.
+4. Remove only the uploaded ZIP after extraction and refresh the domain.
+   Keep existing hosting configuration files such as `php.ini` and `.htaccess`.
 
 ## Edit
 
@@ -89,6 +102,6 @@ Based on the implementation methods in [MRahmaniT/APTUS-Catalog](https://github.
 
 The supplied product photographs and brochure collages are deliberately excluded from the website. Source PDFs are not distributed as web assets.
 
-Persian text uses the supplied Farhang NonEnglish webfonts in regular and bold weights. Latin text uses Roboto, including English words within Persian paragraphs, labels, phone numbers and the English interface. All font assets are served locally. The supplied proprietary Farhang binaries are excluded from this public repository and distributed separately for installation on the hosting account. Extract the provided `orthen-farhang-fonts.zip` inside `/home/ortheninfo/public_html/`; it adds the expected files beneath `assets/fonts/`, including the original license notice. Install that bundle before deploying this update. The previous Noto Sans Arabic font remains available as a Persian fallback until Farhang is installed; its notice is `dist/assets/fonts/OFL-1.1.txt`.
+Persian text uses the supplied Farhang NonEnglish webfonts in regular and bold weights. Latin text uses Roboto, including English words within Persian paragraphs, labels, phone numbers and the English interface. All font assets are served locally. The original Farhang license notice is preserved as `dist/assets/fonts/Farhang-FontLicense.txt`.
 
 Roboto regular and bold Latin subsets are derived from the official Google Fonts `ofl/roboto/Roboto[wdth,wght].ttf` source. Roboto is distributed under the SIL Open Font License; see `dist/assets/fonts/Roboto-OFL.txt`. Brand materials remain subject to their owners' rights.
