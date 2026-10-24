@@ -24,6 +24,35 @@ docker run --rm -p 8080:80 orthen-catalog
 
 The `.openai/hosting.json` manifest binds this checkout to its private Sites publication; it is not required for other static hosts.
 
+## Deploy with cPanel
+
+The checked-in `.cpanel.yml` publishes this site's four runtime files and its
+`assets/` directory to `/home/ortheninfo/public_html/`, as shown in the supplied
+cPanel screenshots. No build step is required.
+
+1. In **Git Version Control**, clone `MRahmaniT/Orthen` into a directory outside
+   `public_html`, for example `/home/ortheninfo/repositories/Orthen`.
+   For this private repository, the hosting account must have working GitHub
+   authentication; a repository-specific, read-only SSH deploy key is sufficient.
+2. Open **Manage**, confirm the checked-out branch is **main**, and select
+   **Pull or Deploy**.
+3. Click **Update from Remote**. Wait for it to finish successfully.
+4. Click **Deploy HEAD Commit**. Check the last-deployment result, then open the
+   domain to verify the site.
+
+The deployment copies only `dist/index.html`, `dist/app.js`,
+`dist/content.js`, `dist/styles.css`, and `dist/assets/`. It does not copy the
+repository, Dockerfile, documentation or Sites manifest into the public folder.
+Existing hosting files such as `php.ini`, `.htaccess`, `.well-known/` and
+`cgi-bin/` are left in place. Updated site files are overwritten; unused old
+assets are not deleted.
+
+A clone managed through cPanel uses **manual pull deployment**: future GitHub
+updates require **Update from Remote**, then **Deploy HEAD Commit**. Automatic
+deployment is a separate setup and has not been configured.
+
+Reference: [cPanel deployment guide](https://docs.cpanel.net/knowledge-base/web-services/guide-to-git-set-up-deployment/).
+
 ## Edit
 
 - `dist/content.js`: bilingual company information, six service descriptions, research context, contact details and interface copy.

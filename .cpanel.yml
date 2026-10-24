@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ortheninfo/public_html/
+    - /bin/cp dist/index.html "$DEPLOYPATH"
+    - /bin/cp dist/app.js "$DEPLOYPATH"
+    - /bin/cp dist/content.js "$DEPLOYPATH"
+    - /bin/cp dist/styles.css "$DEPLOYPATH"
+    - /bin/cp -R dist/assets "$DEPLOYPATH"
